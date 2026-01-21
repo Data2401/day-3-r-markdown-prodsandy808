@@ -1,6 +1,6 @@
 ---
 title: 'RMarkdown:  In Class Assignment'
-author: "YOUR NAME HERE"
+author: "Sandy Datta"
 date: "Data 2401"
 output: 
   html_document:
@@ -40,9 +40,26 @@ Reminders:
   - An example of their writing or lyrics (formatted in a *block of text*);   
   - A _list_ of things they have written or performed (remember to use the formatting markup for a list!), with any of the titles/names in bold.     
 
+# Your work here
+
+## *Wise Words*
+
+> Here's Messi. Away from two, three, four. Wonderful, wonderful,wonderful.
+
+[Link](https://www.youtube.com/watch?v=-tnGhY251ys)
+
+## *I recommend*
+_Future_
+```
+Life is good
+```
+- **March Madness**
+- **Wicked**
+- **Plutoski**
+
 # Part 2: Code Chunks
 
-```{r}
+```{r echo = FALSE}
 2 + 2
 ```
 
@@ -57,6 +74,9 @@ Complete the following steps:
   - Why might someone want to hide code in a report?
   - Why might someone want to show code in a report?
   
+```
+When echo=TRUE, the resulting document showed the equation "2+2" and the answer to the equation, which is 4, however, when echo=FALSE, the document only showed the answer but not the equation. The calculation still ran whether or not the code was hidden. Someone may want to hide the code in a report if they only want to show the outcome of an equation. Someone may want to show the code if they are submitting a document to be reviewed by a peer so that the reviewer can see where there was a mistake if one occured.
+```  
 # Part 3: A small R-in-markdown preview
 
 - Create a subsection within this section called About this document.
@@ -66,7 +86,13 @@ Complete the following steps:
 > To include inline code, use this weird little `r 2+2` pattern, putting the code where I have 2+2 (which is code!) 
 > You can use the function `Sys.Date()`, which would be added like this `r Sys.Date()` but you can do something else if you want. (Look at the knit html to see what this does.)
 
- 
+## About this document
+
+```
+This document is a guide that helps to understand how to use Markdown syntax. It does so by giving instructions that would require the user to use Markdown practically.
+```
+`r Sys.Date()`
+
 
 # Submitting Instructions
 
